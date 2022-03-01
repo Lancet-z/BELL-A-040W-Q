@@ -51,7 +51,7 @@ jobs:
     - name: Build Firmware
       env:
         #TNAME: XIAOMI
-        TNAME: MSG1500
+        TNAME: MSG1500-7615
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
