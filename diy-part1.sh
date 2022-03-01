@@ -1,7 +1,7 @@
 #!/bin/bash
 #新的argon主题
 rm -rf ./package/lean/luci-theme-argon
-git clone https://github.com/CHN-beta/xmurp-ua.git package/xmurp-ua
+#git clone https://github.com/CHN-beta/xmurp-ua.git package/xmurp-ua
 #rm -rf ./package/lean/luci-app-jd-dailybonus
 # Add a feed source
 #sed -i 's/PATCHVER:=5.10/PATCHVER:=5.4/g' target/linux/x86/Makefile
