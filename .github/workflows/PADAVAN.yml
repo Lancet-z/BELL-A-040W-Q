@@ -7,7 +7,7 @@ on:
       repourl:
         description: 'padavan repo url'
         required: true
-        default: 'https://github.com/flowlife/rt-n56u.git'
+        default: 'https://github.com/Lancet-z/rt-n56u.git'
         
   #  branches: 
   #    - master
