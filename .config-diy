@@ -1,6 +1,6 @@
 CONFIG_TARGET_ramips=y
 CONFIG_TARGET_ramips_mt7621=y
-CONFIG_TARGET_ramips_mt7621_DEVICE_nokia-sbell_a040wq=y
+CONFIG_TARGET_ramips_mt7621_DEVICE_raisecom_msg1500-x-00=y
 CONFIG_LIBCURL_COOKIES=y
 CONFIG_LIBCURL_FILE=y
 CONFIG_LIBCURL_FTP=y
@@ -8,70 +8,6 @@ CONFIG_LIBCURL_HTTP=y
 CONFIG_LIBCURL_NO_SMB="!"
 CONFIG_LIBCURL_OPENSSL=y
 CONFIG_LIBCURL_PROXY=y
-CONFIG_MTK_APCLI_SUPPORT=y
-CONFIG_MTK_ATE_SUPPORT=y
-CONFIG_MTK_BACKGROUND_SCAN_SUPPORT=y
-CONFIG_MTK_BAND_STEERING=y
-CONFIG_MTK_BRCM_256QAM_SUPPORT=y
-CONFIG_MTK_CHIP_MT7615E=y
-CONFIG_MTK_DBDC_MODE=y
-CONFIG_MTK_DOT11W_PMF_SUPPORT=y
-CONFIG_MTK_DOT11_N_SUPPORT=y
-CONFIG_MTK_DOT11_VHT_AC=y
-CONFIG_MTK_FIRST_IF_EEPROM_FLASH=y
-CONFIG_MTK_FIRST_IF_IPAILNA=y
-CONFIG_MTK_FIRST_IF_MT7615E=y
-CONFIG_MTK_G_BAND_256QAM_SUPPORT=y
-CONFIG_MTK_HDR_TRANS_RX_SUPPORT=y
-CONFIG_MTK_HDR_TRANS_TX_SUPPORT=y
-CONFIG_MTK_ICAP_SUPPORT=y
-CONFIG_MTK_IGMP_SNOOP_SUPPORT=y
-CONFIG_MTK_LED_CONTROL_SUPPORT=y
-CONFIG_MTK_LINUX_NET_TXQ_SUPPORT=y
-CONFIG_MTK_MAC_REPEATER_SUPPORT=y
-CONFIG_MTK_MBSS_SUPPORT=y
-CONFIG_MTK_MCAST_RATE_SPECIFIC=y
-CONFIG_MTK_MT_AP_SUPPORT=y
-CONFIG_MTK_MT_DFS_SUPPORT=y
-CONFIG_MTK_MT_MAC=y
-CONFIG_MTK_MT_WIFI=y
-CONFIG_MTK_MT_WIFI_PATH="mt_wifi"
-CONFIG_MTK_MULTI_INF_SUPPORT=y
-CONFIG_MTK_MULTI_PROFILE_SUPPORT=y
-CONFIG_MTK_MUMIMO_SUPPORT=y
-CONFIG_MTK_MU_RA_SUPPORT=y
-CONFIG_MTK_PCIE_ASPM_DYM_CTRL_SUPPORT=y
-CONFIG_MTK_PRE_CAL_TRX_SET1_SUPPORT=y
-CONFIG_MTK_PRE_CAL_TRX_SET2_SUPPORT=y
-CONFIG_MTK_RED_SUPPORT=y
-CONFIG_MTK_RLM_CAL_CACHE_SUPPORT=y
-CONFIG_MTK_RTMP_FLASH_SUPPORT=y
-CONFIG_MTK_RT_FIRST_CARD=7615
-CONFIG_MTK_RT_FIRST_CARD_EEPROM="flash"
-CONFIG_MTK_RT_FIRST_IF_RF_OFFSET=0xc0000
-CONFIG_MTK_RT_SECOND_CARD=7615
-CONFIG_MTK_RT_SECOND_CARD_EEPROM="flash"
-CONFIG_MTK_RT_SECOND_IF_RF_OFFSET=0xc8000
-CONFIG_MTK_SECOND_IF_EEPROM_FLASH=y
-CONFIG_MTK_SECOND_IF_IPAILNA=y
-CONFIG_MTK_SECOND_IF_MT7615E=y
-CONFIG_MTK_SMART_CARRIER_SENSE_SUPPORT=y
-CONFIG_MTK_SPECTRUM_SUPPORT=y
-CONFIG_MTK_SUPPORT_OPENWRT=y
-CONFIG_MTK_TCP_RACK_SUPPORT=y
-CONFIG_MTK_THIRD_IF_NONE=y
-CONFIG_MTK_TPC_SUPPORT=y
-CONFIG_MTK_TXBF_SUPPORT=y
-CONFIG_MTK_UAPSD=y
-CONFIG_MTK_VHT_TXBF_2G_EPIGRAM_IE_SUPPORT=y
-CONFIG_MTK_VOW_SUPPORT=y
-CONFIG_MTK_WDS_SUPPORT=y
-CONFIG_MTK_WIFI_BASIC_FUNC=y
-CONFIG_MTK_WIFI_DRIVER=y
-CONFIG_MTK_WIFI_MODE_AP=y
-CONFIG_MTK_WIFI_MT_MAC=y
-CONFIG_MTK_WSC_INCLUDED=y
-CONFIG_MTK_WSC_V2_SUPPORT=y
 CONFIG_PACKAGE_6in4=y
 CONFIG_PACKAGE_adbyby=y
 CONFIG_PACKAGE_boost=y
@@ -80,33 +16,23 @@ CONFIG_PACKAGE_boost-system=y
 CONFIG_PACKAGE_chinadns-ng=y
 CONFIG_PACKAGE_coreutils-nohup=y
 CONFIG_PACKAGE_curl=y
-# CONFIG_PACKAGE_hostapd-common is not set
+# CONFIG_PACKAGE_etherwake is not set
 CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_ipt2socks=y
 CONFIG_PACKAGE_iptables-mod-iprange=y
 CONFIG_PACKAGE_ipv6helper=y
-# CONFIG_PACKAGE_iw is not set
-# CONFIG_PACKAGE_kmod-cfg80211 is not set
-# CONFIG_PACKAGE_kmod-crypto-ccm is not set
-# CONFIG_PACKAGE_kmod-crypto-cmac is not set
-# CONFIG_PACKAGE_kmod-crypto-ctr is not set
-# CONFIG_PACKAGE_kmod-crypto-gcm is not set
-# CONFIG_PACKAGE_kmod-crypto-gf128 is not set
-# CONFIG_PACKAGE_kmod-crypto-ghash is not set
-# CONFIG_PACKAGE_kmod-crypto-hmac is not set
-# CONFIG_PACKAGE_kmod-crypto-rng is not set
-# CONFIG_PACKAGE_kmod-crypto-seqiv is not set
 # CONFIG_PACKAGE_kmod-hwmon-core is not set
 CONFIG_PACKAGE_kmod-ipt-iprange=y
 CONFIG_PACKAGE_kmod-ipt-nat6=y
 # CONFIG_PACKAGE_kmod-ipt-offload is not set
 CONFIG_PACKAGE_kmod-iptunnel=y
 CONFIG_PACKAGE_kmod-iptunnel4=y
-# CONFIG_PACKAGE_kmod-mac80211 is not set
+CONFIG_PACKAGE_kmod-mt7603=y
 # CONFIG_PACKAGE_kmod-mt7615-firmware is not set
-CONFIG_PACKAGE_kmod-mt7615d=y
-CONFIG_PACKAGE_kmod-mt7615d_dbdc=y
 # CONFIG_PACKAGE_kmod-mt7615e is not set
+CONFIG_PACKAGE_kmod-mt76x02-common=y
+CONFIG_PACKAGE_kmod-mt76x2=y
+CONFIG_PACKAGE_kmod-mt76x2-common=y
 # CONFIG_PACKAGE_kmod-nf-conntrack-netlink is not set
 # CONFIG_PACKAGE_kmod-nf-flow is not set
 CONFIG_PACKAGE_kmod-nf-nat6=y
@@ -114,15 +40,14 @@ CONFIG_PACKAGE_kmod-shortcut-fe=y
 CONFIG_PACKAGE_kmod-shortcut-fe-cm=y
 CONFIG_PACKAGE_kmod-sit=y
 # CONFIG_PACKAGE_kmod-tcp-bbr is not set
-CONFIG_PACKAGE_libcap=y
 CONFIG_PACKAGE_libcurl=y
 CONFIG_PACKAGE_libmbedtls=y
 CONFIG_PACKAGE_libstdcpp=y
 CONFIG_PACKAGE_libuv=y
-CONFIG_PACKAGE_libwebsockets-full=y
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
 CONFIG_PACKAGE_luci-app-adbyby-plus=y
 # CONFIG_PACKAGE_luci-app-adguardhome_INCLUDE_binary is not set
+# CONFIG_PACKAGE_luci-app-autoreboot is not set
 # CONFIG_PACKAGE_luci-app-bypass_INCLUDE_ShadowsocksR_Libev_Client is not set
 # CONFIG_PACKAGE_luci-app-bypass_INCLUDE_ShadowsocksR_Libev_Server is not set
 # CONFIG_PACKAGE_luci-app-bypass_INCLUDE_Shadowsocks_Libev_Client is not set
@@ -144,24 +69,16 @@ CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus is not set
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client is not set
-CONFIG_PACKAGE_luci-app-store=y
-CONFIG_PACKAGE_luci-app-ttyd=y
 # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA is not set
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=y
 # CONFIG_PACKAGE_luci-app-unblockmusic is not set
 # CONFIG_PACKAGE_luci-app-vlmcsd is not set
 # CONFIG_PACKAGE_luci-app-vsftpd is not set
+# CONFIG_PACKAGE_luci-app-wol is not set
 CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-i18n-adbyby-plus-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 CONFIG_PACKAGE_luci-proto-ipv6=y
-CONFIG_PACKAGE_luci-theme-atmaterial_new=y
-CONFIG_PACKAGE_luci-theme-edge=y
-CONFIG_PACKAGE_luci-theme-mcat=y
-CONFIG_PACKAGE_luci-theme-neobird=y
-CONFIG_PACKAGE_luci-theme-tomato=y
-CONFIG_PACKAGE_maccalc=y
 # CONFIG_PACKAGE_nlbwmon is not set
 CONFIG_PACKAGE_odhcp6c=y
 CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
@@ -172,13 +89,10 @@ CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
 # CONFIG_PACKAGE_shadowsocksr-libev-ssr-check is not set
 CONFIG_PACKAGE_simple-obfs=y
 CONFIG_PACKAGE_trojan-plus=y
-CONFIG_PACKAGE_ttyd=y
 CONFIG_PACKAGE_unzip=y
 # CONFIG_PACKAGE_vlmcsd is not set
 # CONFIG_PACKAGE_vsftpd-alt is not set
-# CONFIG_PACKAGE_wireless-regdb is not set
-# CONFIG_PACKAGE_wpad-basic is not set
-# CONFIG_PACKAGE_wpad-openssl is not set
+# CONFIG_PACKAGE_wol is not set
 CONFIG_PACKAGE_xray-core=y
 CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
