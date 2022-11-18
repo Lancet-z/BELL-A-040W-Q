@@ -13,7 +13,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 开始编译 A-040W-Q 固件
+name: 开始编译 AX3600 固件
 
 on:
   repository_dispatch:
@@ -25,8 +25,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede.git
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/robimarko/openwrt.git
+  REPO_BRANCH: ipq807x-5.15-pr
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: part1.sh
